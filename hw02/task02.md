@@ -1,5 +1,8 @@
-1. Загружаем csv-файл в Hive
+# 1. (15 балов) Сделать таблицу artists
+**Сделать таблицу artists в Hive и вставить туда значения, используя датасет
+https://www.kaggle.com/pieca111/music-artists-popularity - 15 баллов**
 
+Создаем таблицу:
 ```sql
 CREATE TABLE IF NOT EXISTS artists (
     `mbid` string,
@@ -28,3 +31,10 @@ ALTER TABLE tablename SET TBLPROPERTIES ("skip.header.line.count"="1");
 ```
 
 2. 
+
+```sql
+SELECT artist_mb, count(*) as qty
+FROM artists
+GROUP BY artist_mb
+SORT BY qty DESC;
+```
