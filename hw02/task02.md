@@ -134,7 +134,7 @@ Daft Punk,3782404
 ```sql
 SELECT artist_lastfm, country_lastfm, listeners_lastfm
 FROM artists 
---WHERE country_lastfm = 'Russia'
+WHERE country_lastfm = 'Russia'
 SORT BY listeners_lastfm DESC
 ```
 
