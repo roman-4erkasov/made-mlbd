@@ -152,6 +152,7 @@ SELECT artist_lastfm, country_lastfm, listeners_lastfm
 FROM artists 
 WHERE country_lastfm = 'Russia'
 SORT BY listeners_lastfm DESC
+LIMIT 15
 ```
 
 Вывод "task02_query04.csv": 
