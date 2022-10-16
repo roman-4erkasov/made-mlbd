@@ -1,7 +1,9 @@
 # 1. (15 балов) Сделать таблицу artists
-**Сделать таблицу artists в Hive и вставить туда значения, используя датасет
-https://www.kaggle.com/pieca111/music-artists-popularity - 15 баллов**
+**Задание:**
+Сделать таблицу artists в Hive и вставить туда значения, используя датасет
+https://www.kaggle.com/pieca111/music-artists-popularity - 15 баллов
 
+**Решение:**
 Создаем таблицу:
 ```sql
 CREATE TABLE IF NOT EXISTS artists (
@@ -21,9 +23,11 @@ CREATE TABLE IF NOT EXISTS artists (
  TBLPROPERTIES("skip.header.line.count"="1");
 ```
 
+Загружаем данные:
 ```sql
 LOAD DATA INPATH '/user/fatuus/artists.csv' INTO TABLE artists;
 ```
+
 
 Несмотря на то что при создании таблицы я указал что нужно игнорировать первую строку, так как это хэдер. В таблице все равно был хедер как первая строка. Поэтому пришлось повторно указать что нужно игнорировать первую строку (хэдер файла). В этот раз помогло.
 ```sql
