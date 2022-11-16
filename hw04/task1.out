@@ -1,0 +1,119 @@
+22/11/16 22:19:06 WARN Utils: Your hostname, ubuntu-ds resolves to a loopback address: 127.0.1.1; using 10.129.0.30 instead (on interface eth0)
+22/11/16 22:19:07 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+22/11/16 22:19:07 INFO SparkContext: Running Spark version 3.3.1
+22/11/16 22:19:07 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+22/11/16 22:19:07 INFO ResourceUtils: ==============================================================
+22/11/16 22:19:07 INFO ResourceUtils: No custom resources configured for spark.driver.
+22/11/16 22:19:07 INFO ResourceUtils: ==============================================================
+22/11/16 22:19:07 INFO SparkContext: Submitted application: Simple Application
+22/11/16 22:19:07 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+22/11/16 22:19:07 INFO ResourceProfile: Limiting resource is cpu
+22/11/16 22:19:07 INFO ResourceProfileManager: Added ResourceProfile id: 0
+22/11/16 22:19:07 INFO SecurityManager: Changing view acls to: fatuus
+22/11/16 22:19:07 INFO SecurityManager: Changing modify acls to: fatuus
+22/11/16 22:19:07 INFO SecurityManager: Changing view acls groups to: 
+22/11/16 22:19:07 INFO SecurityManager: Changing modify acls groups to: 
+22/11/16 22:19:07 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(fatuus); groups with view permissions: Set(); users  with modify permissions: Set(fatuus); groups with modify permissions: Set()
+22/11/16 22:19:08 INFO Utils: Successfully started service 'sparkDriver' on port 46073.
+22/11/16 22:19:08 INFO SparkEnv: Registering MapOutputTracker
+22/11/16 22:19:08 INFO SparkEnv: Registering BlockManagerMaster
+22/11/16 22:19:08 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+22/11/16 22:19:08 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+22/11/16 22:19:08 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+22/11/16 22:19:08 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-966c624c-a3b9-4dba-9d72-046b88e2c4ae
+22/11/16 22:19:08 INFO MemoryStore: MemoryStore started with capacity 366.3 MiB
+22/11/16 22:19:08 INFO SparkEnv: Registering OutputCommitCoordinator
+22/11/16 22:19:08 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+22/11/16 22:19:08 INFO SparkContext: Added JAR file:/home/fatuus/made-mlbd/hw04/task1/target/scala-2.12/simple-project_2.12-1.0.jar at spark://10.129.0.30:46073/jars/simple-project_2.12-1.0.jar with timestamp 1668637147501
+22/11/16 22:19:08 INFO Executor: Starting executor ID driver on host 10.129.0.30
+22/11/16 22:19:08 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+22/11/16 22:19:08 INFO Executor: Fetching spark://10.129.0.30:46073/jars/simple-project_2.12-1.0.jar with timestamp 1668637147501
+22/11/16 22:19:08 INFO TransportClientFactory: Successfully created connection to /10.129.0.30:46073 after 29 ms (0 ms spent in bootstraps)
+22/11/16 22:19:08 INFO Utils: Fetching spark://10.129.0.30:46073/jars/simple-project_2.12-1.0.jar to /tmp/spark-d8d1d032-23d4-49ea-bc88-ab4e7af7954f/userFiles-9f38f245-9b5c-442f-8ea4-9012a5fccb0e/fetchFileTemp7328657386592761517.tmp
+22/11/16 22:19:08 INFO Executor: Adding file:/tmp/spark-d8d1d032-23d4-49ea-bc88-ab4e7af7954f/userFiles-9f38f245-9b5c-442f-8ea4-9012a5fccb0e/simple-project_2.12-1.0.jar to class loader
+22/11/16 22:19:09 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 39075.
+22/11/16 22:19:09 INFO NettyBlockTransferService: Server created on 10.129.0.30:39075
+22/11/16 22:19:09 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+22/11/16 22:19:09 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 10.129.0.30, 39075, None)
+22/11/16 22:19:09 INFO BlockManagerMasterEndpoint: Registering block manager 10.129.0.30:39075 with 366.3 MiB RAM, BlockManagerId(driver, 10.129.0.30, 39075, None)
+22/11/16 22:19:09 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 10.129.0.30, 39075, None)
+22/11/16 22:19:09 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 10.129.0.30, 39075, None)
+22/11/16 22:19:10 WARN BLAS: Failed to load implementation from: com.github.fommil.netlib.NativeSystemBLAS
+22/11/16 22:19:10 WARN BLAS: Failed to load implementation from: com.github.fommil.netlib.NativeRefBLAS
+22/11/16 22:19:11 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir.
+22/11/16 22:19:11 INFO SharedState: Warehouse path is 'file:/home/fatuus/made-mlbd/hw04/spark-warehouse'.
+22/11/16 22:19:12 INFO CodeGenerator: Code generated in 241.161684 ms
+22/11/16 22:19:13 INFO Instrumentation: [ce045586] Stage class: LinearRegression
+22/11/16 22:19:13 INFO Instrumentation: [ce045586] Stage uid: linReg_5a978de0ec3e
+22/11/16 22:19:14 INFO CodeGenerator: Code generated in 26.099349 ms
+22/11/16 22:19:15 INFO CodeGenerator: Code generated in 20.49934 ms
+22/11/16 22:19:15 INFO Instrumentation: [ce045586] training: numPartitions=1 storageLevel=StorageLevel(1 replicas)
+22/11/16 22:19:15 INFO Instrumentation: [ce045586] {"labelCol":"y"}
+22/11/16 22:19:15 INFO Instrumentation: [ce045586] {"numFeatures":3}
+22/11/16 22:19:16 INFO CodeGenerator: Code generated in 19.550183 ms
+22/11/16 22:19:16 WARN Instrumentation: [ce045586] regParam is zero, which might cause numerical instability and overfitting.
+22/11/16 22:19:16 INFO SparkContext: Starting job: treeAggregate at WeightedLeastSquares.scala:107
+22/11/16 22:19:16 INFO DAGScheduler: Got job 0 (treeAggregate at WeightedLeastSquares.scala:107) with 1 output partitions
+22/11/16 22:19:16 INFO DAGScheduler: Final stage: ResultStage 0 (treeAggregate at WeightedLeastSquares.scala:107)
+22/11/16 22:19:16 INFO DAGScheduler: Parents of final stage: List()
+22/11/16 22:19:16 INFO DAGScheduler: Missing parents: List()
+22/11/16 22:19:16 INFO DAGScheduler: Submitting ResultStage 0 (MapPartitionsRDD[11] at treeAggregate at WeightedLeastSquares.scala:107), which has no missing parents
+22/11/16 22:19:16 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 21.0 KiB, free 366.3 MiB)
+22/11/16 22:19:16 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 9.7 KiB, free 366.3 MiB)
+22/11/16 22:19:16 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 10.129.0.30:39075 (size: 9.7 KiB, free: 366.3 MiB)
+22/11/16 22:19:16 INFO SparkContext: Created broadcast 0 from broadcast at DAGScheduler.scala:1513
+22/11/16 22:19:16 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 0 (MapPartitionsRDD[11] at treeAggregate at WeightedLeastSquares.scala:107) (first 15 tasks are for partitions Vector(0))
+22/11/16 22:19:16 INFO TaskSchedulerImpl: Adding task set 0.0 with 1 tasks resource profile 0
+22/11/16 22:19:17 WARN TaskSetManager: Stage 0 contains a task of very large size (12602 KiB). The maximum recommended task size is 1000 KiB.
+22/11/16 22:19:17 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0) (10.129.0.30, executor driver, partition 0, PROCESS_LOCAL, 12904592 bytes) taskResourceAssignments Map()
+22/11/16 22:19:17 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+22/11/16 22:19:17 INFO CodeGenerator: Code generated in 13.537089 ms
+22/11/16 22:19:17 WARN InstanceBuilder$NativeBLAS: Failed to load implementation from:dev.ludovic.netlib.blas.JNIBLAS
+22/11/16 22:19:17 WARN InstanceBuilder$NativeBLAS: Failed to load implementation from:dev.ludovic.netlib.blas.ForeignLinkerBLAS
+22/11/16 22:19:17 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 1599 bytes result sent to driver
+22/11/16 22:19:17 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 1106 ms on 10.129.0.30 (executor driver) (1/1)
+22/11/16 22:19:17 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+22/11/16 22:19:17 INFO DAGScheduler: ResultStage 0 (treeAggregate at WeightedLeastSquares.scala:107) finished in 1.371 s
+22/11/16 22:19:17 INFO DAGScheduler: Job 0 is finished. Cancelling potential speculative or zombie tasks for this job
+22/11/16 22:19:17 INFO TaskSchedulerImpl: Killing all running tasks in stage 0: Stage finished
+22/11/16 22:19:17 INFO DAGScheduler: Job 0 finished: treeAggregate at WeightedLeastSquares.scala:107, took 1.419692 s
+22/11/16 22:19:17 INFO Instrumentation: [ce045586] Number of instances: 100000.
+22/11/16 22:19:17 WARN InstanceBuilder$NativeLAPACK: Failed to load implementation from:dev.ludovic.netlib.lapack.JNILAPACK
+22/11/16 22:19:18 INFO CodeGenerator: Code generated in 8.697086 ms
+22/11/16 22:19:18 INFO CodeGenerator: Code generated in 6.764988 ms
+22/11/16 22:19:18 INFO SparkContext: Starting job: treeAggregate at Statistics.scala:58
+22/11/16 22:19:18 INFO DAGScheduler: Got job 1 (treeAggregate at Statistics.scala:58) with 1 output partitions
+22/11/16 22:19:18 INFO DAGScheduler: Final stage: ResultStage 1 (treeAggregate at Statistics.scala:58)
+22/11/16 22:19:18 INFO DAGScheduler: Parents of final stage: List()
+22/11/16 22:19:18 INFO DAGScheduler: Missing parents: List()
+22/11/16 22:19:18 INFO DAGScheduler: Submitting ResultStage 1 (MapPartitionsRDD[19] at treeAggregate at Statistics.scala:58), which has no missing parents
+22/11/16 22:19:18 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 14.2 KiB, free 366.3 MiB)
+22/11/16 22:19:18 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 6.6 KiB, free 366.2 MiB)
+22/11/16 22:19:18 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 10.129.0.30:39075 (size: 6.6 KiB, free: 366.3 MiB)
+22/11/16 22:19:18 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1513
+22/11/16 22:19:18 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 1 (MapPartitionsRDD[19] at treeAggregate at Statistics.scala:58) (first 15 tasks are for partitions Vector(0))
+22/11/16 22:19:18 INFO TaskSchedulerImpl: Adding task set 1.0 with 1 tasks resource profile 0
+22/11/16 22:19:18 WARN TaskSetManager: Stage 1 contains a task of very large size (4789 KiB). The maximum recommended task size is 1000 KiB.
+22/11/16 22:19:18 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 1) (10.129.0.30, executor driver, partition 0, PROCESS_LOCAL, 4904592 bytes) taskResourceAssignments Map()
+22/11/16 22:19:18 INFO Executor: Running task 0.0 in stage 1.0 (TID 1)
+22/11/16 22:19:18 INFO CodeGenerator: Code generated in 7.921565 ms
+22/11/16 22:19:19 INFO Executor: Finished task 0.0 in stage 1.0 (TID 1). 2372 bytes result sent to driver
+22/11/16 22:19:19 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 1) in 294 ms on 10.129.0.30 (executor driver) (1/1)
+22/11/16 22:19:19 INFO TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+22/11/16 22:19:19 INFO DAGScheduler: ResultStage 1 (treeAggregate at Statistics.scala:58) finished in 0.305 s
+22/11/16 22:19:19 INFO DAGScheduler: Job 1 is finished. Cancelling potential speculative or zombie tasks for this job
+22/11/16 22:19:19 INFO TaskSchedulerImpl: Killing all running tasks in stage 1: Stage finished
+22/11/16 22:19:19 INFO DAGScheduler: Job 1 finished: treeAggregate at Statistics.scala:58, took 0.311746 s
+22/11/16 22:19:19 INFO Instrumentation: [524d9da1] training finished
+w=[1.499999999999938,0.29999999999999916,-0.7000000000000388]
+22/11/16 22:19:19 INFO SparkContext: Invoking stop() from shutdown hook
+22/11/16 22:19:19 INFO SparkUI: Stopped Spark web UI at http://10.129.0.30:4040
+22/11/16 22:19:19 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+22/11/16 22:19:19 INFO MemoryStore: MemoryStore cleared
+22/11/16 22:19:19 INFO BlockManager: BlockManager stopped
+22/11/16 22:19:19 INFO BlockManagerMaster: BlockManagerMaster stopped
+22/11/16 22:19:19 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+22/11/16 22:19:19 INFO SparkContext: Successfully stopped SparkContext
+22/11/16 22:19:19 INFO ShutdownHookManager: Shutdown hook called
+22/11/16 22:19:19 INFO ShutdownHookManager: Deleting directory /tmp/spark-d8d1d032-23d4-49ea-bc88-ab4e7af7954f
+22/11/16 22:19:19 INFO ShutdownHookManager: Deleting directory /tmp/spark-c5b973c8-8204-455f-8370-04d3d80fbe23
